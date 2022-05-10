@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+div{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

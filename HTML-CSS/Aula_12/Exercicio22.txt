@@ -1,0 +1,12 @@
+1. No Css um elemento filho pode ser referenciado por uma separação de espaço.
+    R: Verdadeiro, podendo ser referenciado também por um sinal de >
+    ex: PAI > FILHO > FILHO_DO_FILHO
+    ex: PAI FILHO FILHO_DO_FILHO
+
+2. A propriedade CSS background-size permitirá renderizar um tamanho, além de alterar o tamanho do arquivo.
+    R: Falso, o background-size realmente renderiza uma foto no tamanho que a gente quiser,
+    porém não altera o  tamanho do arquivo original
+
+3. A tag responsável por criar titulos em até 6 niveis é a HEADER.
+    R: Falso, a tag responsável por criar até 6 niveis é a h, variando de h1 até h6, tag normalmente
+       contida numa header

@@ -1,0 +1,9 @@
+1. Dê uma definição para o elemento HTML <body>.
+    R: O Elemento <body> é aonde irá toda a parte do corpo do HTML, podendo conter divs, imagens, background-colors
+
+2. É correto dizer que por padrão todos os elementos HTML possuem uma definição de margin ou padding?
+    R: Alguns sim, caso não sejam zerados no inicio de um CSS,
+       o navegador irá automaticamente atribuir valores para eles
+
+3. uma tag <figure> pode conter várias tags <figurecaption>.
+    R: Falso, uma tag <figure> irá conter apenas uma <figurecaption>

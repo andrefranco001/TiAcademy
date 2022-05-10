@@ -1,0 +1,6 @@
+1. Como é possivel descobrir qual é a fonte padrão de renderização do navegador?
+    R: Inspecionando os elementos com F12 (Dev TOols) e procurando qual é o font-family que o navegador aplicou
+
+2. É verdade que quando alteramos um CSS diretamente no DEV TOOL automaticamente alteramos o arquivo CSS?
+    R: Falso, quando alteramos um CSS no DEV TOOLS apenas é alterado naquela renderização do navegador, podendo
+       voltar assim que atualizarmos a página e também podendo testar novas configurações

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#janelaCliente, div#janelaProduto{
+    width: 400px;
+    height: 200px;
+    background-color: chocolate;
+    color: aliceblue;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+div#janelaProduto{
+    background-color: blue;
+}
+
+.mostrar{
+    display: block;
+}
+
+.fechar{
+    display: none;
+}

@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+main > div#menu {
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid black;
+}
+
+main > div#menu > div {
+    width: 100%;
+    height: 3%;
+    padding-left: 5%;
+    padding-top: 1.5%;
+    cursor: pointer;
+    border-bottom: 1px dotted black;
+}
+
+main > div#conteudo {
+    width: 80%;
+    height: 100%;
+}
+
+/*Clientes*/
+main > div#conteudo > form#Clientes {
+    display: none;
+    width: 30%;
+    height: 40%;
+    border: 2px solid black;
+    margin: auto;
+}
+
+main > div#conteudo > form#Clientes > label {
+    width: 90%;
+    margin: auto;
+    height: 6%;
+    align-items: center;
+}
+
+main > div#conteudo > form#Clientes > input {
+    padding-left: 3%;
+    width: 90%;
+    margin: auto;
+    height: 12%;
+    border: 1px solid black;
+}
+
+
+main > div#conteudo > form#Clientes > label#titulo {
+    width: 90%;
+    height: 25%;
+    align-items: center;
+    margin: auto;
+}
+
+main > div#conteudo > form#Clientes > section {
+    margin-top: 2%;
+    width: 100%;
+    height: 19%;
+}
+
+main > div#conteudo > form#Clientes > section > div#esquerda {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: -3.8%;
+}
+
+main > div#conteudo > form#Clientes > section > div#direita {
+    margin-left: 0.1%;
+    width: 49%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Fim clientes*/
+
+/*Inicio Produtos*/
+main > div#conteudo > form#Produtos {
+    display: block;
+    width: 30%;
+    height: 50%;
+    border: 2px solid black;
+    margin: auto;
+}
+
+main > div#conteudo > form#Produtos > label {
+    width: 90%;
+    margin: auto;
+    height: 6%;
+    align-items: center;
+}
+
+main > div#conteudo > form#Produtos > input {
+    padding-left: 3%;
+    width: 90%;
+    margin: auto;
+    height: 8%;
+    border: 1px solid black;
+}
+
+main > div#conteudo > form#Produtos > label#titulo_2 {
+    width: 90%;
+    height: 25%;
+    align-items: center;
+    margin: auto;
+}
+
+main > div#conteudo > form#Produtos > section {
+    margin-top: 2%;
+    width: 100%;
+    height: 19%;
+}
+
+main > div#conteudo > form#Produtos > section > div#left {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: -3.8%;
+}
+
+main > div#conteudo > form#Produtos > section > div#right {
+    margin-left: 0.1%;
+    width: 49%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+/*Fim Produtos*/
+
+
+/*Inicio Pedidos*/
+
+
+/*Fim Pedidos*/
+
+/*Classes*/
+.botao_menor {
+    width: 30%;
+    height: 50%;
+    background-color: purple;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.botao_maior {
+    margin-left: 5%;
+    width: 30%;
+    height: 50%;
+    background-color: purple;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.botao_novo{
+    width: 50%;
+    height: 50%;
+    background-color: #039BE5;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.botao_salvar{
+    margin-left: 5%;
+    width: 50%;
+    height: 50%;
+    background-color: green;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}

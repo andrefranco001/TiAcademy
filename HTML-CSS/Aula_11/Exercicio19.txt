@@ -1,0 +1,5 @@
+1. Qual a tag semantica que servirá de container para tags de paragrafo?
+R: <article></article>
+
+2. Uma tag de parágrafo pode ser substituida por uma tag <div> principalmente para conter textos longos?
+R: Não, a tag div não é usada para tratar textos

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+main > form {
+    width: 20%;
+    height: 30%;
+    margin: auto;
+    border: 2px solid black;
+}
+
+main > form > label {
+    width: 90%;
+    height: 10%;
+    margin: 0.2% auto;
+    padding-top: 3%;
+    display: block;
+}
+
+main > form > input {
+    display: block;
+    width: 90%;
+    height: 18%;
+    border: 2px solid black;
+    margin: 1% auto;
+}
+
+main > form > input#button {
+    margin-top: 2%;
+    height: 32%;
+    background-color: #29B6F6;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+}
