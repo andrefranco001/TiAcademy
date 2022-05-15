@@ -5,42 +5,59 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script2.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,200"/>
     <link rel="stylesheet" href="style2.css">
-    <title>Document</title>
+    <title>Painel - FlashJS</title>
 </head>
 <body>
     <main class="flex">
         <div id="menu">
-            <div>Clientes</div>
-            <div>Produtos</div>
-            <div>Pedidos</div>
+            <div id="menuClientes">
+                <span class="material-symbols-outlined">group_add</span>
+                Clientes
+            </div>
+            <div id="menuProdutos">
+                <span class="material-symbols-outlined">redeem</span>
+                Produtos
+            </div>
+            <div id="menuPedidos">
+                <span class="material-symbols-outlined">shopping_cart</span>
+                Pedidos
+            </div>
         </div>
         <div class="flex" id="conteudo">
 
-            <form id="Clientes">
-                <label class="flex" id="titulo"><h2><u> - CLIENTES</u></h2></label>
+            <form id="Clientes" class="form-flex">
+                <div class="flex">
+                    <h1 class="titulo" id="titulo">Clientes</h1>
+                    <input class=" flex botaoFechar" type="button" value="x">
+                </div>
                 <label class="flex">Código</label>
-                <input class="flex" type="text">
+                <input class="flex" style="font-family: 'Verdana'" type="text" value="1" disabled>
                 <label class="flex">Nome</label>
                 <input class="flex" type="text">
-                <label class="flex">Data de Cadastro</label>
+                <label class="flex">Data Cadastro</label>
                 <input class="flex" type="date">
                 <section class="flex">
-                    <div class="flex" id="esquerda">
-                        <div class="flex botao_menor"><</div>
-                        <div class="flex botao_maior">></div>
+                    <div class="flex esquerda">
+                        <input class="flex botao botao_anterior" type="button" value="<">
+                        <input class="flex botao botao_proximo" type="button" value=">">
                     </div>
-                    <div class="flex" id="direita">
-                        <div class="flex botao_novo">Novo</div>
-                        <div class="flex botao_salvar">Salvar</div>
+                    <div class="flex direita">
+                        <input class="flex botao botao_novo" type="button" value="Novo">
+                        <input class="flex botao botao_salvar" type="button" value="Salvar">
                     </div>
                 </section>
             </form>
 
-            <form id="Produtos">
-                <label class="flex" id="titulo_2"><h2><u> - PRODUTOS</u></h2></label>
+            <form class="form-flex" id="Produtos">
+                <div class="flex">
+                    <h1 class="titulo" id="titulo_2">Produtos</h1>
+                    <input class="flex botaoFechar" type="button" value="x">
+                </div>
                 <label class="flex">Código</label>
-                <input class="flex" type="text">
+                <input class="flex" style="font-family: 'Verdana'" type="text" value="1" disabled>
                 <label class="flex">Descrição</label>
                 <input class="flex" type="text">
                 <label class="flex">Preço</label>
@@ -48,18 +65,59 @@
                 <label class="flex">Quantidade</label>
                 <input class="flex" type="text">
                 <section class="flex">
-                    <div class="flex" id="left">
-                        <div class="flex botao_menor"><</div>
-                        <div class="flex botao_maior">></div>
+                    <div class="flex esquerda">
+                        <input class="flex botao botao_anterior" type="button" value="<">
+                        <input class="flex botao botao_proximo" type="button" value=">" >
                     </div>
-                    <div class="flex" id="right">
-                        <div class="flex botao_novo">Novo</div>
-                        <div class="flex botao_salvar">Salvar</div>
+                    <div class="flex direita">
+                        <input class="flex botao botao_novo" type="button" value="Novo" >
+                        <input class="flex botao botao_salvar" type="button" value="Salvar">
                     </div>
                 </section>
             </form>
 
-
+            <form id="Pedidos">
+                <div class="flex">
+                    <h1 class="titulo" id="titulo_3">Pedidos</h1>
+                    <input class="flex botaoFechar" type="button" value="x">
+                </div>
+                <label class="flex">Código do Cliente</label>
+                <input class="flex" type="text" value="2">
+                <label class="flex">Cliente</label>
+                <input class="flex" type="text" value="Bruce Wayne" disabled>
+                <label class="flex subtituloAzul" >Localizar produto</label>
+                <section class="flex" id="LocalizarProduto">
+                    <div class="flex">
+                        <input type="text" value="1">
+                        <input id="segundoElemento" type="text" value="Caneta esferográfica" disabled>
+                        <input id="terceiroElemento" type="text" value="0.8" disabled>
+                        <input id="quartoElemento" type="text">
+                        <input id="quintoElemento" type="button" name="quintoElemento" value="Lançar no Pedido">
+                    </div>
+                </section>
+                <label class="flex subtituloAzul" >Itens do Pedido</label>
+                <section class="flex" id="itensDoPedido" >
+                    <div>
+                        <div class="flex" id="informacoescima">
+                            <label id="item">Item</label>
+                            <label id="descricao">Descrição</label>
+                            <label id="preco">Preço</label>
+                            <label id="qtd">Qtd</label>
+                            <label id="subtotal">Sub Total</label>
+                        </div>
+                        <div class="flex" id="informacoesbaixo">
+                            <input id="inputItem" type="text" value="1" disabled>
+                            <input id="inputDescricao" type="text" value="Caneta Esferográfica" disabled>
+                            <input id="inputPreco" type="text" value="0.8" disabled>
+                            <input id="inputQtd" type="text" value="3" disabled>
+                            <input id="inputSubTotal" type="text" value="2.40" disabled>
+                        </div>
+                        <div class="flex" id="total">
+                            <input type="text" value="R$ 2.40" disabled>
+                        </div>
+                    </div>
+                </section>
+            </form>
         </div>
     </main>
 </body>
