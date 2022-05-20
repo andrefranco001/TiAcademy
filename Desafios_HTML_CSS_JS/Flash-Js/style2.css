@@ -1,7 +1,7 @@
 *{
     margin: 0;
-    border: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -31,20 +31,19 @@ main > div#conteudo {
 }
 
 /*Clientes*/
-main > div#conteudo > form#Clientes {
-    display: none;
+main > div#conteudo > form#formClientes {
     border: 1px solid black;
     margin: 3% auto;
     font-family: 'Verdana';
 }
 
-main > div#conteudo > form#Clientes > label {
+main > div#conteudo > form#formClientes > label {
     width: 90%;
     margin: auto;
     font-size: 1rem;
 }
 
-main > div#conteudo > form#Clientes > input {
+main > div#conteudo > form#formClientes> input {
     width: 90%;
     height: 10%;
     padding-left: 1%;
@@ -54,23 +53,23 @@ main > div#conteudo > form#Clientes > input {
     font-weight: bold;
 }
 
-main > div#conteudo > form#Clientes > div {
+main > div#conteudo > form#formClientes> div {
     width: 100%;
     height: 25%;
 }
 
-main > div#conteudo > form#Clientes > div > h1#titulo {
+main > div#conteudo > form#formClientes > div > h1#titulo {
     width: 80%;
-    margin: auto 0 auto auto;
+    margin: auto;
 }
 
-main > div#conteudo > form#Clientes > section {
+main > div#conteudo > form#formClientes > section {
     margin-top: 2%;
     width: 100%;
     height: 19%;
 }
 
-main > div#conteudo > form#Clientes > section > div.esquerda {
+main > div#conteudo > form#formClientes > section > div.esquerda {
     width: 50%;
     height: 100%;
     align-items: center;
@@ -78,7 +77,7 @@ main > div#conteudo > form#Clientes > section > div.esquerda {
     margin-left: 5%;
 }
 
-main > div#conteudo > form#Clientes > section > div.direita {
+main > div#conteudo > form#formClientes > section > div.direita {
     margin-left: 0.1%;
     width: 49%;
     height: 100%;
@@ -90,22 +89,21 @@ main > div#conteudo > form#Clientes > section > div.direita {
 /*Fim clientes*/
 
 /*Inicio Produtos*/
-main > div#conteudo > form#Produtos {
-    display: none;
+main > div#conteudo > form#formProdutos {
     width: 30%;
     height: 50%;
     border: 1px solid black;
     margin: 3% auto;
 }
 
-main > div#conteudo > form#Produtos > label {
+main > div#conteudo > form#formProdutos > label {
     width: 90%;
     margin: auto;
     height: 6%;
     align-items: center;
 }
 
-main > div#conteudo > form#Produtos > input {
+main > div#conteudo > form#formProdutos > input {
     width: 90%;
     height: 8%;
     padding-left: 1%;
@@ -115,23 +113,23 @@ main > div#conteudo > form#Produtos > input {
     font-weight: bold;
 }
 
-main > div#conteudo > form#Produtos > div {
+main > div#conteudo > form#formProdutos > div {
     width: 100%;
     height:25%;
 }
 
-main > div#conteudo > form#Produtos > div > h1#titulo_2 {
+main > div#conteudo > form#formProdutos > div > h1#titulo_2 {
     width: 80%;
-    margin: auto 0 auto auto;
+    margin: auto;
 }
 
-main > div#conteudo > form#Produtos > section {
+main > div#conteudo > form#formProdutos > section {
     margin-top: 2%;
     width: 100%;
     height: 19%;
 }
 
-main > div#conteudo > form#Produtos > section > div.esquerda {
+main > div#conteudo > form#formProdutos > section > div.esquerda {
     width: 50%;
     height: 100%;
     align-items: center;
@@ -139,7 +137,7 @@ main > div#conteudo > form#Produtos > section > div.esquerda {
     margin-left: 5%;
 }
 
-main > div#conteudo > form#Produtos > section > div.direita {
+main > div#conteudo > form#formProdutos > section > div.direita {
     margin-left: 0.1%;
     width: 49%;
     height: 100%;
@@ -152,25 +150,24 @@ main > div#conteudo > form#Produtos > section > div.direita {
 
 /*Inicio Pedidos*/
 
-main > div#conteudo > form#Pedidos {
-    display: block;
+main > div#conteudo > form#formPedidos {
     width: 70%;
     height: 60%;
     border: 1px solid black;
     margin: 3% auto;
 }
 
-main > div#conteudo > form#Pedidos > div {
+main > div#conteudo > form#formPedidos > div {
     width: 100%;
     height:20%;
 }
 
-main > div#conteudo > form#Pedidos > div > h1#titulo_3 {
+main > div#conteudo > form#formPedidos > div > h1#titulo_3 {
     width: 80%;
-    margin: auto 0 auto auto;
+    margin: auto;
 }
 
-main > div#conteudo > form#Pedidos > label {
+main > div#conteudo > form#formPedidos > label {
     width: 90%;
     height: 5%;
     margin: auto;
@@ -178,7 +175,7 @@ main > div#conteudo > form#Pedidos > label {
     font-size: 1.2rem;
 }
 
-main > div#conteudo > form#Pedidos > input {
+main > div#conteudo > form#formPedidos > input {
     width: 90%;
     height: 8%;
     padding-left: 1%;
@@ -188,23 +185,23 @@ main > div#conteudo > form#Pedidos > input {
     font-weight: bold;
 }
 
-main > div#conteudo > form#Pedidos > section {
+main > div#conteudo > form#formPedidos > section {
     margin: auto;
     width: 90%;
     height: 12%;
 }
 
-main > div#conteudo > form#Pedidos > section#LocalizarProduto {
+main > div#conteudo > form#formPedidos > section#LocalizarProduto {
         background-color: lightgrey;
 }
 
-main > div#conteudo > form#Pedidos > section > div {
+main > div#conteudo > form#formPedidos > section > div {
     width: 100%;
     height: 100%;
     align-items: center;
 }
 
-main > div#conteudo > form#Pedidos > section > div > input {
+main > div#conteudo > form#formPedidos > section > div > input#primeiroElemento {
     width: 10%;
     height: 80%;
     padding-left: 0.5%;
@@ -213,28 +210,34 @@ main > div#conteudo > form#Pedidos > section > div > input {
     border: 1px solid black;
 }
 
-main > div#conteudo > form#Pedidos > section > div > input#segundoElemento {
+main > div#conteudo > form#formPedidos > section > div > input#segundoElemento {
     width: 30%;
     height: 80%;
+    padding-left: 0.5%;
     margin-left: 5px;
     border: 1px solid black;
+    font-size: 1.2rem;
 }
 
-main > div#conteudo > form#Pedidos > section > div > input#terceiroElemento {
+main > div#conteudo > form#formPedidos > section > div > input#terceiroElemento {
     width: 15%;
     height: 80%;
+    padding-left: 0.5%;
     margin-left: 5px;
     border: 1px solid black;
+    font-size: 1.2rem;
 }
 
-main > div#conteudo > form#Pedidos > section > div > input#quartoElemento {
+main > div#conteudo > form#formPedidos > section > div > input#quartoElemento {
     width: 15%;
     height: 80%;
+    padding-left: 0.5%;
     margin-left: 5px;
     border: 1px solid black;
+    font-size: 1.2rem;
 }
 
-main > div#conteudo > form#Pedidos > section > div > input#quintoElemento {
+main > div#conteudo > form#formPedidos > section > div > input#quintoElemento {
     width: 30%;
     height: 80%;
     margin: 0 5px 0 5px;
@@ -243,47 +246,47 @@ main > div#conteudo > form#Pedidos > section > div > input#quintoElemento {
     font-size: 1.2rem;
 }
 
-main > div#conteudo > form#Pedidos > section#itensDoPedido {
+main > div#conteudo > form#formPedidos > section#itensDoPedido {
     margin: auto;
     width: 90%;
     height: 10%;
     align-items: center;
 }
 
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoescima {
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoescima {
     width: 95%;
     height: 40%;
 }
 
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoescima > label {
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoescima > label {
     font-size: 1.1rem;
     margin-right: 2%;
     padding-left: 0.5%;
 
 }
 
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoescima > label#item{
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoescima > label#item{
     width: 10%;
 }
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoescima > label#descricao{
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoescima > label#descricao{
     width: 45%;
 }
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoescima > label#preco{
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoescima > label#preco{
     width: 10%;
 }
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoescima > label#qtd{
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoescima > label#qtd{
     width: 10%;
 }
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoescima > label#subtotal{
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoescima > label#subtotal{
     width: 15%;
 }
 
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoesbaixo {
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoesbaixo {
     width: 95%;
     height: 60%;
 }
 
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoesbaixo > input {
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoesbaixo > input {
 
     font-size: 1rem;
     margin: 0.5% 2% 0 0 ;
@@ -291,28 +294,28 @@ main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informaco
     background-color: white;
 }
 
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoesbaixo > input#inputItem{
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoesbaixo > input#inputItem{
     width: 10%;
 }
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoesbaixo > input#inputDescricao{
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoesbaixo > input#inputDescricao{
     width: 45%;
 }
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoesbaixo > input#inputPreco{
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoesbaixo > input#inputPreco{
     width: 10%;
 }
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoesbaixo > input#inputQtd{
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoesbaixo > input#inputQtd{
     width: 10%;
 }
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#informacoesbaixo > input#inputSubTotal{
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#informacoesbaixo > input#inputSubTotal{
     width: 15%;
 }
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#total {
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#total {
     width: 100%;
     height: 100%;
     justify-content: flex-end;
 }
 
-main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#total > input {
+main > div#conteudo > form#formPedidos > section#itensDoPedido > div > div#total > input {
     width: 15%;
     height: 80%;
     text-align: center;
@@ -372,16 +375,14 @@ main > div#conteudo > form#Pedidos > section#itensDoPedido > div > div#total > i
 
 
 .form-flex {
-    display: flex;
     flex-direction: column;
-    align-items: space-between;
     justify-content: space-between;
     width: 30vw;
     height: 40vh;
 }
 
 .titulo {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-decoration:underline ;
 }
@@ -395,4 +396,13 @@ main > div#conteudo > form#Pedidos > .subtituloAzul {
     color: blue;
     border-top: 2px solid black;
     font-weight: bold;
+}
+
+/*JavaScript*/
+.sumirForm{
+    display: none;
+}
+
+.aparecerForm{
+    display: block;
 }

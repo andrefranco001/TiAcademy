@@ -28,71 +28,71 @@
         </div>
         <div class="flex" id="conteudo">
 
-            <form id="Clientes" class="form-flex">
+            <form id="formClientes" class="form-flex sumirForm">
                 <div class="flex">
                     <h1 class="titulo" id="titulo">Clientes</h1>
-                    <input class=" flex botaoFechar" type="button" value="x">
+                    <input id="xClientes" class="botaoFechar" type="button" value="x">
                 </div>
                 <label class="flex">Código</label>
-                <input class="flex" style="font-family: 'Verdana'" type="text" value="1" disabled>
+                <input class="flex" id="inputCodigoClientes" style="font-family: 'Verdana'" type="text" value="" disabled>
                 <label class="flex">Nome</label>
-                <input class="flex" type="text">
+                <input class="flex" value="" id="inputNomeClientes" type="text">
                 <label class="flex">Data Cadastro</label>
-                <input class="flex" type="date">
+                <input class="flex" id="inputDataCadastroClientes" type="text" disabled>
                 <section class="flex">
                     <div class="flex esquerda">
-                        <input class="flex botao botao_anterior" type="button" value="<">
-                        <input class="flex botao botao_proximo" type="button" value=">">
+                        <input class="flex botao botao_anterior" id="botaoAnteriorClientes" type="button" value="<">
+                        <input class="flex botao botao_proximo"  id="botaoProximoClientes" type="button" value=">">
                     </div>
                     <div class="flex direita">
-                        <input class="flex botao botao_novo" type="button" value="Novo">
-                        <input class="flex botao botao_salvar" type="button" value="Salvar">
+                        <input class="flex botao botao_novo" id="botaoNovoClientes" type="button" value="Novo">
+                        <input class="flex botao botao_salvar" id="botaoSalvarClientes" type="button" value="Salvar">
                     </div>
                 </section>
             </form>
 
-            <form class="form-flex" id="Produtos">
+            <form id="formProdutos" class="form-flex aparecerForm" >
                 <div class="flex">
                     <h1 class="titulo" id="titulo_2">Produtos</h1>
-                    <input class="flex botaoFechar" type="button" value="x">
+                    <input id="xProdutos" class="flex botaoFechar" type="button" value="x">
                 </div>
                 <label class="flex">Código</label>
-                <input class="flex" style="font-family: 'Verdana'" type="text" value="1" disabled>
+                <input class="flex" id="inputCodigoProdutos" style="font-family: 'Verdana'" type="text" value="" disabled>
                 <label class="flex">Descrição</label>
-                <input class="flex" type="text">
+                <input class="flex" id="inputDescricaoProdutos" type="text">
                 <label class="flex">Preço</label>
-                <input class="flex" type="text">
+                <input class="flex" id="inputPrecoProdutos" type="text">
                 <label class="flex">Quantidade</label>
-                <input class="flex" type="text">
+                <input class="flex" id="inputQuantidadeProdutos" type="text">
                 <section class="flex">
                     <div class="flex esquerda">
-                        <input class="flex botao botao_anterior" type="button" value="<">
-                        <input class="flex botao botao_proximo" type="button" value=">" >
+                        <input class="flex botao botao_anterior" id="botaoAnteriorProdutos" type="button" value="<">
+                        <input class="flex botao botao_proximo" id="botaoProximoProdutos" type="button" value=">" >
                     </div>
                     <div class="flex direita">
-                        <input class="flex botao botao_novo" type="button" value="Novo" >
-                        <input class="flex botao botao_salvar" type="button" value="Salvar">
+                        <input class="flex botao botao_novo" id="botaoNovoProdutos" type="button" value="Novo" >
+                        <input class="flex botao botao_salvar" id="botaoSalvarProdutos" type="button" value="Salvar">
                     </div>
                 </section>
             </form>
 
-            <form id="Pedidos">
+            <form id="formPedidos" class="sumirForm">
                 <div class="flex">
                     <h1 class="titulo" id="titulo_3">Pedidos</h1>
-                    <input class="flex botaoFechar" type="button" value="x">
+                    <input id="xPedidos" class="flex botaoFechar" type="button" value="x">
                 </div>
                 <label class="flex">Código do Cliente</label>
-                <input class="flex" type="text" value="2">
+                <input class="flex" id="inputCodigoPedido" type="text" value="">
                 <label class="flex">Cliente</label>
-                <input class="flex" type="text" value="Bruce Wayne" disabled>
+                <input class="flex" id="inputClientePedido" type="text" value="" disabled>
                 <label class="flex subtituloAzul" >Localizar produto</label>
                 <section class="flex" id="LocalizarProduto">
                     <div class="flex">
-                        <input type="text" value="1">
-                        <input id="segundoElemento" type="text" value="Caneta esferográfica" disabled>
-                        <input id="terceiroElemento" type="text" value="0.8" disabled>
-                        <input id="quartoElemento" type="text">
-                        <input id="quintoElemento" type="button" name="quintoElemento" value="Lançar no Pedido">
+                        <input id="primeiroElemento" type="text" value="">
+                        <input id="segundoElemento" type="text" value="" disabled>
+                        <input id="terceiroElemento" type="text" value="" disabled>
+                        <input id="quartoElemento" type="text" value="">
+                        <input id="quintoElemento" type="button" name="quintoElemento" value="Lançar o Pedido">
                     </div>
                 </section>
                 <label class="flex subtituloAzul" >Itens do Pedido</label>

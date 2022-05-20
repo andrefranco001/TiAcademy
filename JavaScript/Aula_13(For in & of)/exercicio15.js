@@ -3,8 +3,6 @@ let frutas = [
    {fruta: 'Melao', preco: 6.36}
 ]
 
-
-
 function listaFrutas (f) {
     for (let produto of f) {
         for (let p in produto) {
