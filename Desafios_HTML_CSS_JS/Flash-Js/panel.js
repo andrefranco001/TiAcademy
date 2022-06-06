@@ -24,7 +24,7 @@ window.onload = function () {
         } else {
             formClientes.classList.replace('aparecerForm', 'sumirForm');
         }
-    }); 
+    });
     menuProdutos.addEventListener('click', function () {
         if (formClientes.classList.contains('aparecerForm') || (formPedidos.classList.contains('aparecerForm'))) {
             formClientes.classList.replace('aparecerForm', "sumirForm");
@@ -156,14 +156,14 @@ window.onload = function () {
     });
 
     // Mapeando os inputs e botoes do formulario dos Produtos
-    const inputCodigoProdutos     = document.querySelector('#inputCodigoProdutos');
-    const inputDescricaoProdutos  = document.querySelector('#inputDescricaoProdutos');
-    const inputPrecoProdutos      = document.querySelector('#inputPrecoProdutos');
+    const inputCodigoProdutos = document.querySelector('#inputCodigoProdutos');
+    const inputDescricaoProdutos = document.querySelector('#inputDescricaoProdutos');
+    const inputPrecoProdutos = document.querySelector('#inputPrecoProdutos');
     const inputQuantidadeProdutos = document.querySelector('#inputQuantidadeProdutos');
-    const botaoAnteriorProdutos   = document.querySelector('#botaoAnteriorProdutos');
-    const botaoProximoProdutos    = document.querySelector('#botaoProximoProdutos');
-    const botaoNovoProdutos       = document.querySelector('#botaoNovoProdutos');
-    const botaoSalvarProdutos     = document.querySelector('#botaoSalvarProdutos');
+    const botaoAnteriorProdutos = document.querySelector('#botaoAnteriorProdutos');
+    const botaoProximoProdutos = document.querySelector('#botaoProximoProdutos');
+    const botaoNovoProdutos = document.querySelector('#botaoNovoProdutos');
+    const botaoSalvarProdutos = document.querySelector('#botaoSalvarProdutos');
 
     // Setando valores iniciais para serem mostrados no formulario Produtos
     var contadorProdutos = 0;
@@ -260,16 +260,16 @@ window.onload = function () {
     });
 
     // Mapeando os inputs e botoes do formulario dos Produtos
-    const inputCodigoPedido  = document.querySelector('#inputCodigoPedido');
+    const inputCodigoPedido = document.querySelector('#inputCodigoPedido');
     const inputClientePedido = document.querySelector('#inputClientePedido');
-    const primeiroElemento   = document.querySelector('#primeiroElemento');
-    const segundoElemento    = document.querySelector('#segundoElemento');
-    const terceiroElemento   = document.querySelector('#terceiroElemento');
-    const quartoElemento     = document.querySelector('#quartoElemento');
-    const quintoElemento     = document.querySelector('#quintoElemento');
-    const SectionTotal       = document.querySelector('#SectionTotal');
-    const inputTotal         = document.querySelector('#inputTotal');
-    const tbody              = document.querySelector('#Pai');
+    const primeiroElemento = document.querySelector('#primeiroElemento');
+    const segundoElemento = document.querySelector('#segundoElemento');
+    const terceiroElemento = document.querySelector('#terceiroElemento');
+    const quartoElemento = document.querySelector('#quartoElemento');
+    const quintoElemento = document.querySelector('#quintoElemento');
+    const SectionTotal = document.querySelector('#SectionTotal');
+    const inputTotal = document.querySelector('#inputTotal');
+    const tbody = document.querySelector('#Pai');
 
     inputCodigoPedido.addEventListener('blur', function () {
         // Se o codigo não existir, mostrar cod min e cod max
