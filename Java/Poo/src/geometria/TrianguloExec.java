@@ -1,9 +1,7 @@
 package geometria;
 
 import java.util.Scanner;
-
 public class TrianguloExec {
-
     public static void main(String[] args) {
         Triangulo a = new Triangulo();
         Triangulo b = new Triangulo();

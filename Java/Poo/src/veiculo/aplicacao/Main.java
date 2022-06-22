@@ -2,20 +2,40 @@ package veiculo.aplicacao;
 
 import veiculo.entidades.Veiculo;
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-
-        Veiculo a = new Veiculo(90,16,9);
         Scanner scan = new Scanner(System.in);
-        System.out.print("Informe a distancia da viagem: ");
-        double distancia = scan.nextDouble();
-        a.tanqueViagem(distancia);
 
-        // Veiculo b = new Veiculo(56,5,9);
+        int passageiros;
+        double tanque, consumo, kms, valorCombus;
 
-    }
-    public static void entrada(){
+        System.out.print("Informe a Quantidade de Passageiros: ");
+        passageiros = scan.nextInt();
+        System.out.print("Informe a capacidade do tanque (em Litros): ");
+        tanque = scan.nextDouble();
+        System.out.print("O consumo em (Km/L): ");
+        consumo = scan.nextDouble();
+        System.out.print("Distancia a ser percorrida (em Km): ");
+        kms = scan.nextDouble();
+        System.out.print("Valor do Combustível (em R$): ");
+        valorCombus = scan.nextDouble();
 
+        Veiculo carro = new Veiculo(passageiros, tanque, consumo);
+
+        double tanques = carro.tanqueViagem(kms);
+        double racha = carro.dividirDespesas(kms, valorCombus);
+
+        System.out.print("A Viagem é apenas de ida? (Sim ou não): ");
+        String resp = scan.next().toUpperCase();
+        if (resp.equals("NÃO") || resp.equals("N") || resp.equals("NAO") || resp.equals("NA")){
+            racha *= 2;
+            tanques *= 2;
+            kms *= 2;
+        }
+        System.out.println(carro.informacoes());
+        System.out.printf("\nDistancia Total da viagem é de %.0f kms e valor total da viagem é de R$ %.2f", kms, racha * passageiros);
+        System.out.printf("\nPara a viagem vamos precisar de %.2f tanque(s) e cada passageiro deverá pagar R$ %.2f\n\n", tanques, racha);
+
+        scan.close();
     }
 }
