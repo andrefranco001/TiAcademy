@@ -58,9 +58,11 @@ GROUP BY idOrdemCompra
 HAVING totalcompra > 5000;
 -- 5. O nome do fornecedor da ordem de compra, a ordem de compra e o total pago pela ordem de compra.
 
-SELECT f.id, f.nome, ioc.idOrdemCompra, SUM(quantidade * valor) as total
+SELECT f.id, f.nome, SUM(quantidade * valor) as total
 FROM ordem_compra as oc, item_ordem_compra as ioc, fornecedor as f
 WHERE  oc.id = ioc.idOrdemCompra AND f.id = oc.idFornecedor
+GROUP BY f.nome
+ORDER BY f.id
 
 -- 6. O nome do fornecedor da ordem de compra, a data da ordem de compra,
 -- o total pago pela ordem de compra num determinado intervalo de datas.
