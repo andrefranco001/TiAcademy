@@ -15,9 +15,9 @@ public class Main {
         tanque = scan.nextDouble();
         System.out.print("O consumo em (Km/L): ");
         consumo = scan.nextDouble();
-        System.out.print("Distância a ser percorrida (em Km): ");
+        System.out.print("Distï¿½ncia a ser percorrida (em Km): ");
         kms = scan.nextDouble();
-        System.out.print("Valor do Combustível (em R$): ");
+        System.out.print("Valor do Combustï¿½vel (em R$): ");
         valorCombus = scan.nextDouble();
 
         Veiculo carro = new Veiculo(passageiros, tanque, consumo);
@@ -25,7 +25,7 @@ public class Main {
         double tanques = carro.tanqueViagem(kms);
         double racha = carro.dividirDespesas(kms, valorCombus);
 
-        System.out.print("A Viagem é apenas de ida? (Sim ou não): ");
+        System.out.print("A Viagem ï¿½ apenas de ida? (Sim ou nï¿½o): ");
         String resp = scan.next().toUpperCase();
         if (resp.startsWith("N")) {
             racha *= 2;
@@ -33,8 +33,8 @@ public class Main {
             kms *= 2;
         }
         System.out.println(carro.informacoes());
-        System.out.printf("\nDistância Total da viagem é de %.0f kms e valor total da viagem é de R$ %.2f", kms, racha * passageiros);
-        System.out.printf("\nPara a viagem vamos precisar de %.2f tanque(s) e cada passageiro deverá pagar R$ %.2f\n\n", tanques, racha);
+        System.out.printf("\nDistï¿½ncia Total da viagem ï¿½ de %.0f kms e valor total da viagem ï¿½ de R$ %.2f", kms, racha * passageiros);
+        System.out.printf("\nPara a viagem vamos precisar de %.2f tanque(s) e cada passageiro deverï¿½ pagar R$ %.2f\n\n", tanques, racha);
 
         scan.close();
     }
