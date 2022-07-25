@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="1" author="André">
+        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela DESTILADOS">
+            <not>
+                <tableExists tableName="DESTILADOS"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="DESTILADOS">
+            <column name="ID" type="INT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_DESTILADOS"/>
+            </column>
+
+            <column name="NOME" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="ALCOOLICO" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="DATA" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+        <addAutoIncrement tableName="DESTILADOS"
+                          columnName="id"
+                          columnDataType="int"
+                          incrementBy="1"
+                          startWith="1"
+        />
+    </changeSet>
+
+    <changeSet id="2" author="André">
+        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela FERMENTADOS">
+            <not>
+                <tableExists tableName="FERMENTADOS"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="FERMENTADOS">
+            <column name="ID" type="INT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_FERMENTADOS"/>
+            </column>
+
+            <column name="NOME" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="ALCOOLICO" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="DATA" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+        <addAutoIncrement tableName="FERMENTADOS"
+                          columnName="id"
+                          columnDataType="int"
+                          incrementBy="1"
+                          startWith="1"
+        />
+    </changeSet>
+
+    <changeSet id="3" author="André">
+        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela SUCOS">
+            <not>
+                <tableExists tableName="SUCOS"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="SUCOS">
+            <column name="ID" type="INT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_SUCOS"/>
+            </column>
+
+            <column name="NOME" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="ALCOOLICO" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="DATA" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+        <addAutoIncrement tableName="SUCOS"
+                          columnName="id"
+                          columnDataType="int"
+                          incrementBy="1"
+                          startWith="1"
+        />
+    </changeSet>
+
+    <changeSet id="4" author="André">
+        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela REFRIGERANTES">
+            <not>
+                <tableExists tableName="REFRIGERANTES"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="REFRIGERANTES">
+            <column name="ID" type="INT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_REFRIGERANTES"/>
+            </column>
+
+            <column name="NOME" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="ALCOOLICO" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="DATA" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+        <addAutoIncrement tableName="REFRIGERANTES"
+                          columnName="id"
+                          columnDataType="int"
+                          incrementBy="1"
+                          startWith="1"
+        />
+    </changeSet>
+
+
+    <changeSet id="5" author="André">
+        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela CHA_GELADO">
+            <not>
+                <tableExists tableName="CHA_GELADO"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="CHA_GELADO">
+            <column name="ID" type="INT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_CHA_GELADO"/>
+            </column>
+
+            <column name="NOME" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="ALCOOLICO" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="DATA" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+        <addAutoIncrement tableName="CHA_GELADO"
+                          columnName="id"
+                          columnDataType="int"
+                          incrementBy="1"
+                          startWith="1"
+        />
+    </changeSet>
+</databaseChangeLog>
