@@ -1,8 +1,0 @@
-1. Como podemos definir uma URL, dê um exemplo.
-    R: uma URL é um caminho para um diretorio ou outro site
-
-2. O que é HTTP?
-    R: Protocolo de comunicação do navegador e o server
-
-3. O que são Vendors em CSS?
-    R: Prefixos que os fabricantes de navegadores disponibilizam para testar configurações de CSS neles
