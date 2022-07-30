@@ -1,8 +1,0 @@
-1. O que são variaveis em uma linguagem de programação?
-    R: Variaveis são objetos que conterão um valor, podendo ele ser number, string, etc...
-       que podem mudar de valor ao decorrer do código que podem ser utilizado durante o codigo
-       ao chamar o nome da variavel ao inves de ficar repetindo o valor da variavel.
-
-2. Dê um exemplo de um tipo de dado e o que este tipo irá representar;
-    R: var nome = "André Franco";
-    representa o nome de André Franco
