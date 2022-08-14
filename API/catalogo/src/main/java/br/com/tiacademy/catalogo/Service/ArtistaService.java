@@ -26,7 +26,7 @@ public class ArtistaService {
     }
 
     public Artista editar(Long id, Artista editado){
-        Artista recuperado = porId(id);
+        Artista recuperado = listById(id);
 
         if (Objects.isNull(recuperado)) {
             throw new RuntimeException("Artista não existe");

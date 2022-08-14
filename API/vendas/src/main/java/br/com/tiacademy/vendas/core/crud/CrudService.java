@@ -1,7 +1,8 @@
 package br.com.tiacademy.vendas.core.crud;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import java.util.List;
 import java.util.Objects;
 
@@ -9,6 +10,10 @@ public abstract class CrudService<T, ID> {
 
     @Autowired
     protected CrudRepository<T, ID> repository;
+
+    public Page<T> paginada(Pageable pageable) {
+        return repository.findAll(pageable);
+    }
 
     public List<T> listar(){
         return repository.findAll();

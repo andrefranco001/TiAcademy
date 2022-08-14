@@ -4,16 +4,45 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
 
-    <changeSet id="1" author="André">
-        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela DESTILADOS">
+    <changeSet id="0" author="André">
+        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela DISTRIBUIDORA">
             <not>
-                <tableExists tableName="DESTILADOS"/>
+                <tableExists tableName="DISTRIBUIDORA"/>
             </not>
         </preConditions>
 
-        <createTable tableName="DESTILADOS">
+        <createTable tableName="DISTRIBUIDORA">
             <column name="ID" type="INT">
-                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_DESTILADOS"/>
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_DISTRIBUIDORA"/>
+            </column>
+
+            <column name="NOME" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="DATA" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+        <addAutoIncrement tableName="DISTRIBUIDORA"
+                          columnName="id"
+                          columnDataType="int"
+                          incrementBy="1"
+                          startWith="1"
+        />
+    </changeSet>
+
+    <changeSet id="1" author="André">
+        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela DESTILADO">
+            <not>
+                <tableExists tableName="DESTILADO"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="DESTILADO">
+            <column name="ID" type="INT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_DESTILADO"/>
             </column>
 
             <column name="NOME" type="VARCHAR(255)">
@@ -28,9 +57,15 @@
                 <constraints nullable="false"/>
             </column>
 
+            <column name="DISTRIBUIDORA_ID" type="INT">
+                <constraints foreignKeyName="fk_destilados_distribuidora"
+                             referencedTableName="distribuidora"
+                             referencedColumnNames="id"/>
+            </column>
+
         </createTable>
 
-        <addAutoIncrement tableName="DESTILADOS"
+        <addAutoIncrement tableName="DESTILADO"
                           columnName="id"
                           columnDataType="int"
                           incrementBy="1"
@@ -39,15 +74,15 @@
     </changeSet>
 
     <changeSet id="2" author="André">
-        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela FERMENTADOS">
+        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela FERMENTADO">
             <not>
-                <tableExists tableName="FERMENTADOS"/>
+                <tableExists tableName="FERMENTADO"/>
             </not>
         </preConditions>
 
-        <createTable tableName="FERMENTADOS">
+        <createTable tableName="FERMENTADO">
             <column name="ID" type="INT">
-                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_FERMENTADOS"/>
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_FERMENTADO"/>
             </column>
 
             <column name="NOME" type="VARCHAR(255)">
@@ -62,9 +97,15 @@
                 <constraints nullable="false"/>
             </column>
 
+            <column name="DISTRIBUIDORA_ID" type="INT">
+                <constraints foreignKeyName="fk_fermentado_distribuidora"
+                             referencedTableName="distribuidora"
+                             referencedColumnNames="id"/>
+            </column>
+
         </createTable>
 
-        <addAutoIncrement tableName="FERMENTADOS"
+        <addAutoIncrement tableName="FERMENTADO"
                           columnName="id"
                           columnDataType="int"
                           incrementBy="1"
@@ -73,15 +114,15 @@
     </changeSet>
 
     <changeSet id="3" author="André">
-        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela SUCOS">
+        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela SUCO">
             <not>
-                <tableExists tableName="SUCOS"/>
+                <tableExists tableName="SUCO"/>
             </not>
         </preConditions>
 
-        <createTable tableName="SUCOS">
+        <createTable tableName="SUCO">
             <column name="ID" type="INT">
-                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_SUCOS"/>
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_SUCO"/>
             </column>
 
             <column name="NOME" type="VARCHAR(255)">
@@ -96,9 +137,15 @@
                 <constraints nullable="false"/>
             </column>
 
+            <column name="DISTRIBUIDORA_ID" type="INT">
+                <constraints foreignKeyName="fk_suco_distribuidora"
+                             referencedTableName="distribuidora"
+                             referencedColumnNames="id"/>
+            </column>
+
         </createTable>
 
-        <addAutoIncrement tableName="SUCOS"
+        <addAutoIncrement tableName="SUCO"
                           columnName="id"
                           columnDataType="int"
                           incrementBy="1"
@@ -107,15 +154,15 @@
     </changeSet>
 
     <changeSet id="4" author="André">
-        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela REFRIGERANTES">
+        <preConditions onFail="MARK_RAN" onFailMessage="Já existe a tabela REFRIGERANTE">
             <not>
-                <tableExists tableName="REFRIGERANTES"/>
+                <tableExists tableName="REFRIGERANTE"/>
             </not>
         </preConditions>
 
-        <createTable tableName="REFRIGERANTES">
+        <createTable tableName="REFRIGERANTE">
             <column name="ID" type="INT">
-                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_REFRIGERANTES"/>
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_REFRIGERANTE"/>
             </column>
 
             <column name="NOME" type="VARCHAR(255)">
@@ -130,9 +177,15 @@
                 <constraints nullable="false"/>
             </column>
 
+            <column name="DISTRIBUIDORA_ID" type="INT">
+                <constraints foreignKeyName="fk_refrigerantes_distribuidora"
+                             referencedTableName="distribuidora"
+                             referencedColumnNames="id"/>
+            </column>
+
         </createTable>
 
-        <addAutoIncrement tableName="REFRIGERANTES"
+        <addAutoIncrement tableName="REFRIGERANTE"
                           columnName="id"
                           columnDataType="int"
                           incrementBy="1"
@@ -165,10 +218,16 @@
                 <constraints nullable="false"/>
             </column>
 
+            <column name="DISTRIBUIDORA_ID" type="INT">
+                <constraints foreignKeyName="fk_chas_distribuidora"
+                             referencedTableName="distribuidora"
+                             referencedColumnNames="id"/>
+            </column>
+
         </createTable>
 
         <addAutoIncrement tableName="CHA_GELADO"
-                          columnName="id"
+                          columnName="ID"
                           columnDataType="int"
                           incrementBy="1"
                           startWith="1"
